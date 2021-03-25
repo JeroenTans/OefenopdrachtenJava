@@ -9,8 +9,13 @@ public class Korting {
         System.out.println("Wat is het aankoopbedrag?");
         double aankoopBedrag = userInputScanner.nextDouble();
 
+
         if (aankoopBedrag < 75) {
             System.out.println("De klant krijgt geen korting. Het aankoopbedrag blijft " + aankoopBedrag);
+        } if (aankoopBedrag > 74 && aankoopBedrag < 300) {
+            System.out.println("De klant krijgt 10% korting. Het aankoopbedrag is nu: " + aankoopBedrag*0.9);
+        } if (aankoopBedrag > 300) {
+            System.out.println("De klant krijgt 16% korting. Het aankoopbedrag is nu: " + aankoopBedrag*0.84);
         }
 
 
