@@ -1,5 +1,7 @@
 package nl.novi.opdrachten.methodes;
 
+import java.util.Scanner;
+
 /**
  * Schrijf een methode die een Integer ontvangt.
  * Wanneer het getal deelbaar is door 5, laat hem de volgende tekst returnen:
@@ -9,7 +11,21 @@ package nl.novi.opdrachten.methodes;
  */
 public class DeelbaarDoorVijf {
 
+    public static void devidedByFive (int chosenNumber) {
+        if (chosenNumber % 5 == 0) {
+            System.out.println("Dit getal is deelbaar door vijf.");
+        } else {
+            System.out.println("Dit getal is niet deelbaar door vijf.");
+        }
+    }
+
     public static void main(String[] sammieKijkOmhoog) {
-        int chosenNumber = 44;
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Geef een nummer op: ");
+        int chosenNumber = input.nextInt();
+
+        devidedByFive(chosenNumber);
     }
 }
