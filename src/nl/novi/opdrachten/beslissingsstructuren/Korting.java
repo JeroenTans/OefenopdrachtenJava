@@ -9,9 +9,15 @@ public class Korting {
         System.out.println("Wat is het aankoopbedrag?");
         double aankoopBedrag = userInputScanner.nextDouble();
 
+        if (aankoopBedrag < 75) {
+            System.out.println("De klant krijgt geen korting. Het aankoopbedrag blijft " + aankoopBedrag);
+        }
+
+
         /*
         Hierboven is het aankoopbedrag ingevoerd. Het is de bedoeling dat jij de korting bepaalt en het nieuwe bedrag
         uitrekent.
+
 
         Wanneer het ingevoerde bedrag onder de 75 is, krijgt de klant geen korting. Print uit:
         "De klant krijgt geen korting. Het aankoopbedrag blijft -HIER HET BEDRAG-"
